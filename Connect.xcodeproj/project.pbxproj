@@ -8,15 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		13955BD70A2586BBF288B696 /* Pods_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F241BC74849819DBCD29E2B4 /* Pods_Connect.framework */; };
+		344229BE2A00631900A24432 /* ConcertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229BD2A00631900A24432 /* ConcertInfo.swift */; };
+		344229C02A00639000A24432 /* ConcertStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229BF2A00639000A24432 /* ConcertStatusView.swift */; };
+		344229C32A0063F900A24432 /* ConcertStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229C22A0063F900A24432 /* ConcertStatus.swift */; };
 		34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */; };
 		34A7643D29FEEF2700AB3FD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643C29FEEF2700AB3FD4 /* ContentView.swift */; };
 		34A7643F29FEEF2A00AB3FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A7643E29FEEF2A00AB3FD4 /* Assets.xcassets */; };
 		34A7644229FEEF2A00AB3FD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A7644129FEEF2A00AB3FD4 /* Preview Assets.xcassets */; };
 		34A7644A29FEF01900AB3FD4 /* HomeNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7644929FEF01900AB3FD4 /* HomeNavBar.swift */; };
 		34A7645229FEF53A00AB3FD4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7645129FEF53A00AB3FD4 /* R.generated.swift */; };
+		34A7645529FEF87F00AB3FD4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7645429FEF87F00AB3FD4 /* HomeView.swift */; };
+		34A7645729FEFC1700AB3FD4 /* MyConcertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7645629FEFC1700AB3FD4 /* MyConcertInfo.swift */; };
+		34A7645A29FEFF0700AB3FD4 /* NSObject+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7645929FEFF0700AB3FD4 /* NSObject+Extenstion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		344229BD2A00631900A24432 /* ConcertInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertInfo.swift; sourceTree = "<group>"; };
+		344229BF2A00639000A24432 /* ConcertStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertStatusView.swift; sourceTree = "<group>"; };
+		344229C22A0063F900A24432 /* ConcertStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertStatus.swift; sourceTree = "<group>"; };
 		34A7643729FEEF2700AB3FD4 /* Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectApp.swift; sourceTree = "<group>"; };
 		34A7643C29FEEF2700AB3FD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +33,9 @@
 		34A7644129FEEF2A00AB3FD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34A7644929FEF01900AB3FD4 /* HomeNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavBar.swift; sourceTree = "<group>"; };
 		34A7645129FEF53A00AB3FD4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		34A7645429FEF87F00AB3FD4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		34A7645629FEFC1700AB3FD4 /* MyConcertInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcertInfo.swift; sourceTree = "<group>"; };
+		34A7645929FEFF0700AB3FD4 /* NSObject+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extenstion.swift"; sourceTree = "<group>"; };
 		538B3C69D0CD3437A5830D94 /* Pods-Connect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect.debug.xcconfig"; path = "Target Support Files/Pods-Connect/Pods-Connect.debug.xcconfig"; sourceTree = "<group>"; };
 		563A3610ADD9B2C52256D9C8 /* Pods-Connect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connect.release.xcconfig"; path = "Target Support Files/Pods-Connect/Pods-Connect.release.xcconfig"; sourceTree = "<group>"; };
 		F241BC74849819DBCD29E2B4 /* Pods_Connect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +62,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		344229C12A0063CC00A24432 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				344229C22A0063F900A24432 /* ConcertStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		34A7642E29FEEF2700AB3FD4 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +91,9 @@
 		34A7643929FEEF2700AB3FD4 /* Connect */ = {
 			isa = PBXGroup;
 			children = (
+				344229C12A0063CC00A24432 /* Models */,
+				34A7645829FEFEEA00AB3FD4 /* Extensions */,
+				34A7645329FEF86B00AB3FD4 /* TabBar */,
 				34A7645129FEF53A00AB3FD4 /* R.generated.swift */,
 				34A7644829FEF00600AB3FD4 /* Components */,
 				34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */,
@@ -93,8 +116,27 @@
 			isa = PBXGroup;
 			children = (
 				34A7644929FEF01900AB3FD4 /* HomeNavBar.swift */,
+				34A7645629FEFC1700AB3FD4 /* MyConcertInfo.swift */,
+				344229BD2A00631900A24432 /* ConcertInfo.swift */,
+				344229BF2A00639000A24432 /* ConcertStatusView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		34A7645329FEF86B00AB3FD4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				34A7645429FEF87F00AB3FD4 /* HomeView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		34A7645829FEFEEA00AB3FD4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				34A7645929FEFF0700AB3FD4 /* NSObject+Extenstion.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B187B8CA1A6252789DA8CC55 /* Frameworks */ = {
@@ -239,9 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A7645729FEFC1700AB3FD4 /* MyConcertInfo.swift in Sources */,
 				34A7643D29FEEF2700AB3FD4 /* ContentView.swift in Sources */,
 				34A7644A29FEF01900AB3FD4 /* HomeNavBar.swift in Sources */,
 				34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */,
+				34A7645A29FEFF0700AB3FD4 /* NSObject+Extenstion.swift in Sources */,
+				34A7645529FEF87F00AB3FD4 /* HomeView.swift in Sources */,
+				344229BE2A00631900A24432 /* ConcertInfo.swift in Sources */,
+				344229C02A00639000A24432 /* ConcertStatusView.swift in Sources */,
+				344229C32A0063F900A24432 /* ConcertStatus.swift in Sources */,
 				34A7645229FEF53A00AB3FD4 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

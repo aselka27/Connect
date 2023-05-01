@@ -12,8 +12,12 @@ let R = _R(bundle: Bundle(for: BundleFinder.self))
 struct _R {
   let bundle: Foundation.Bundle
   var color: color { .init(bundle: bundle) }
+  var image: image { .init(bundle: bundle) }
 
   func color(bundle: Foundation.Bundle) -> color {
+    .init(bundle: bundle)
+  }
+  func image(bundle: Foundation.Bundle) -> image {
     .init(bundle: bundle)
   }
   func validate() throws {
@@ -24,14 +28,34 @@ struct _R {
     let developmentRegion = "en"
   }
 
-  /// This `_R.color` struct is generated, and contains static references to 2 colors.
+  /// This `_R.color` struct is generated, and contains static references to 5 colors.
   struct color {
     let bundle: Foundation.Bundle
 
     /// Color `AccentColor`.
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
 
+    /// Color `addTicketButton`.
+    var addTicketButton: RswiftResources.ColorResource { .init(name: "addTicketButton", path: [], bundle: bundle) }
+
     /// Color `blue`.
     var blue: RswiftResources.ColorResource { .init(name: "blue", path: [], bundle: bundle) }
+
+    /// Color `navyBlue`.
+    var navyBlue: RswiftResources.ColorResource { .init(name: "navyBlue", path: [], bundle: bundle) }
+
+    /// Color `red`.
+    var red: RswiftResources.ColorResource { .init(name: "red", path: [], bundle: bundle) }
+  }
+
+  /// This `_R.image` struct is generated, and contains static references to 2 images.
+  struct image {
+    let bundle: Foundation.Bundle
+
+    /// Image `coldPlay`.
+    var coldPlay: RswiftResources.ImageResource { .init(name: "coldPlay", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `kevinHeart`.
+    var kevinHeart: RswiftResources.ImageResource { .init(name: "kevinHeart", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
   }
 }
