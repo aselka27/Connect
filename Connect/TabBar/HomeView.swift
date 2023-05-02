@@ -43,8 +43,9 @@ struct HomeView: View {
         }
 //        .padding(.leading, 24)
         .background(Color(R.color.addTicketButton()!))
-        
     }
+    
+   
 }
 
 extension HomeView {
