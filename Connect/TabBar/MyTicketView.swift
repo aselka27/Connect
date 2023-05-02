@@ -134,6 +134,10 @@ extension MyTicketView {
             
         }
     }
+    
+    private func openCamera() {
+        
+    }
 }
 
 struct MyTicketView_Previews: PreviewProvider {

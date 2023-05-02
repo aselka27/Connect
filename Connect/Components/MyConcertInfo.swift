@@ -33,11 +33,7 @@ struct MyConcertInfo: View {
                 }
                 .padding(.horizontal)
                 .padding(.bottom)
-               
-                
-               
         }
-       
         .frame(minWidth: UIScreen.main.bounds.width*0.6)
         .background(.white)
         .cornerRadius(12)

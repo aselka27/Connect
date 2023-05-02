@@ -12,6 +12,7 @@
 		344229C02A00639000A24432 /* ConcertStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229BF2A00639000A24432 /* ConcertStatusView.swift */; };
 		344229C32A0063F900A24432 /* ConcertStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229C22A0063F900A24432 /* ConcertStatus.swift */; };
 		344229C62A006CA000A24432 /* MyTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229C52A006CA000A24432 /* MyTicketView.swift */; };
+		344229C82A00D6A400A24432 /* EmbeddedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229C72A00D6A300A24432 /* EmbeddedResponse.swift */; };
 		34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */; };
 		34A7643D29FEEF2700AB3FD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643C29FEEF2700AB3FD4 /* ContentView.swift */; };
 		34A7643F29FEEF2A00AB3FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A7643E29FEEF2A00AB3FD4 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		344229BF2A00639000A24432 /* ConcertStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertStatusView.swift; sourceTree = "<group>"; };
 		344229C22A0063F900A24432 /* ConcertStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertStatus.swift; sourceTree = "<group>"; };
 		344229C52A006CA000A24432 /* MyTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketView.swift; sourceTree = "<group>"; };
+		344229C72A00D6A300A24432 /* EmbeddedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedResponse.swift; sourceTree = "<group>"; };
 		34A7643729FEEF2700AB3FD4 /* Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectApp.swift; sourceTree = "<group>"; };
 		34A7643C29FEEF2700AB3FD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				344229C22A0063F900A24432 /* ConcertStatus.swift */,
+				344229C72A00D6A300A24432 /* EmbeddedResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				34A7645729FEFC1700AB3FD4 /* MyConcertInfo.swift in Sources */,
 				34A7643D29FEEF2700AB3FD4 /* ContentView.swift in Sources */,
 				34A7644A29FEF01900AB3FD4 /* HomeNavBar.swift in Sources */,
+				344229C82A00D6A400A24432 /* EmbeddedResponse.swift in Sources */,
 				344229C62A006CA000A24432 /* MyTicketView.swift in Sources */,
 				34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */,
 				34A7645A29FEFF0700AB3FD4 /* NSObject+Extenstion.swift in Sources */,
