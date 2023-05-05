@@ -13,8 +13,9 @@
 		344229C32A0063F900A24432 /* ConcertStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229C22A0063F900A24432 /* ConcertStatus.swift */; };
 		344229C62A006CA000A24432 /* MyTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229C52A006CA000A24432 /* MyTicketView.swift */; };
 		344229C82A00D6A400A24432 /* EmbeddedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229C72A00D6A300A24432 /* EmbeddedResponse.swift */; };
+		344229CC2A04572600A24432 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229CB2A04572600A24432 /* MainView.swift */; };
 		34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */; };
-		34A7643D29FEEF2700AB3FD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643C29FEEF2700AB3FD4 /* ContentView.swift */; };
+		34A7643D29FEEF2700AB3FD4 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643C29FEEF2700AB3FD4 /* CustomTabView.swift */; };
 		34A7643F29FEEF2A00AB3FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A7643E29FEEF2A00AB3FD4 /* Assets.xcassets */; };
 		34A7644229FEEF2A00AB3FD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A7644129FEEF2A00AB3FD4 /* Preview Assets.xcassets */; };
 		34A7644A29FEF01900AB3FD4 /* HomeNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7644929FEF01900AB3FD4 /* HomeNavBar.swift */; };
@@ -30,9 +31,10 @@
 		344229C22A0063F900A24432 /* ConcertStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertStatus.swift; sourceTree = "<group>"; };
 		344229C52A006CA000A24432 /* MyTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketView.swift; sourceTree = "<group>"; };
 		344229C72A00D6A300A24432 /* EmbeddedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedResponse.swift; sourceTree = "<group>"; };
+		344229CB2A04572600A24432 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		34A7643729FEEF2700AB3FD4 /* Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectApp.swift; sourceTree = "<group>"; };
-		34A7643C29FEEF2700AB3FD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34A7643C29FEEF2700AB3FD4 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		34A7643E29FEEF2A00AB3FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34A7644129FEEF2A00AB3FD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34A7644929FEF01900AB3FD4 /* HomeNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavBar.swift; sourceTree = "<group>"; };
@@ -98,13 +100,14 @@
 			children = (
 				34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */,
 				34A7645129FEF53A00AB3FD4 /* R.generated.swift */,
-				34A7643C29FEEF2700AB3FD4 /* ContentView.swift */,
+				34A7643C29FEEF2700AB3FD4 /* CustomTabView.swift */,
 				344229C12A0063CC00A24432 /* Models */,
 				34A7645829FEFEEA00AB3FD4 /* Extensions */,
 				34A7645329FEF86B00AB3FD4 /* TabBar */,
 				34A7644829FEF00600AB3FD4 /* Components */,
 				34A7643E29FEEF2A00AB3FD4 /* Assets.xcassets */,
 				34A7644029FEEF2A00AB3FD4 /* Preview Content */,
+				344229CB2A04572600A24432 /* MainView.swift */,
 			);
 			path = Connect;
 			sourceTree = "<group>";
@@ -288,7 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				34A7645729FEFC1700AB3FD4 /* MyConcertInfo.swift in Sources */,
-				34A7643D29FEEF2700AB3FD4 /* ContentView.swift in Sources */,
+				344229CC2A04572600A24432 /* MainView.swift in Sources */,
+				34A7643D29FEEF2700AB3FD4 /* CustomTabView.swift in Sources */,
 				34A7644A29FEF01900AB3FD4 /* HomeNavBar.swift in Sources */,
 				344229C82A00D6A400A24432 /* EmbeddedResponse.swift in Sources */,
 				344229C62A006CA000A24432 /* MyTicketView.swift in Sources */,

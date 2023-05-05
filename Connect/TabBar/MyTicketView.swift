@@ -12,7 +12,7 @@ struct MyTicketView: View {
     private let gridItem = [GridItem(.adaptive(minimum: 150))]
     
     var body: some View {
-        ZStack(alignment: .bottom) {
+        ZStack(alignment: .bottomTrailing) {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     ZStack(alignment: .bottom) {
@@ -51,9 +51,11 @@ struct MyTicketView: View {
                     }
                     .padding(.top, 26)
                 }
+                .padding(.bottom, 80)
             }
           uploadButton
-            .padding(.bottom, 33)
+            .padding(.bottom, 120)
+            .padding(.trailing)
         }
         .ignoresSafeArea()
         .background(Color(R.color.addTicketButton()!))
