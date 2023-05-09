@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-var tabs = ["house", "heart"]
+var tabs = ["house", "heart", "person"]
 
 struct CustomTabView: View {
     
@@ -25,6 +25,8 @@ struct CustomTabView: View {
                     .tag(tabs[0])
                MyTicketView()
                     .tag(tabs[1])
+               ProfileView()
+                    .tag(tabs[2])
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .ignoresSafeArea(.all)

@@ -10,7 +10,7 @@ import SwiftUI
 struct MyTicketView: View {
     
     private let gridItem = [GridItem(.adaptive(minimum: 150))]
-    
+    @State private var isTicketDetailShown: Bool = false
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             ScrollView(.vertical, showsIndicators: false) {
@@ -59,7 +59,9 @@ struct MyTicketView: View {
         }
         .ignoresSafeArea()
         .background(Color(R.color.addTicketButton()!))
-        
+        .sheet(isPresented: $isTicketDetailShown) {
+            TicketDetailView()
+        }
     }
 }
 
@@ -90,6 +92,7 @@ extension MyTicketView {
     private var viewTicketButton: some  View {
         Button {
             print("View Ticket")
+            isTicketDetailShown.toggle()
         } label: {
             Text("View Ticket")
                 .foregroundColor(.black)

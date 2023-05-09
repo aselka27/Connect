@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		13955BD70A2586BBF288B696 /* Pods_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F241BC74849819DBCD29E2B4 /* Pods_Connect.framework */; };
+		34407AF72A0629C300CAB44B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34407AF62A0629C300CAB44B /* User.swift */; };
+		34407AF92A062D7500CAB44B /* TicketDetailView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 34407AF82A062D7500CAB44B /* TicketDetailView .swift */; };
+		34407AFB2A07385400CAB44B /* BarcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34407AFA2A07385400CAB44B /* BarcodeView.swift */; };
+		34407AFD2A073E0900CAB44B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34407AFC2A073E0900CAB44B /* UIImage+Extension.swift */; };
 		344229BE2A00631900A24432 /* ConcertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229BD2A00631900A24432 /* ConcertInfo.swift */; };
 		344229C02A00639000A24432 /* ConcertStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229BF2A00639000A24432 /* ConcertStatusView.swift */; };
 		344229C32A0063F900A24432 /* ConcertStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229C22A0063F900A24432 /* ConcertStatus.swift */; };
 		344229C62A006CA000A24432 /* MyTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229C52A006CA000A24432 /* MyTicketView.swift */; };
 		344229C82A00D6A400A24432 /* EmbeddedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229C72A00D6A300A24432 /* EmbeddedResponse.swift */; };
 		344229CC2A04572600A24432 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229CB2A04572600A24432 /* MainView.swift */; };
+		344B39062A04ADB900B6AEAE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B39052A04ADB900B6AEAE /* ProfileView.swift */; };
+		344B39082A04B42C00B6AEAE /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B39072A04B42C00B6AEAE /* TagView.swift */; };
 		34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */; };
 		34A7643D29FEEF2700AB3FD4 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643C29FEEF2700AB3FD4 /* CustomTabView.swift */; };
 		34A7643F29FEEF2A00AB3FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A7643E29FEEF2A00AB3FD4 /* Assets.xcassets */; };
@@ -26,12 +32,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34407AF62A0629C300CAB44B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		34407AF82A062D7500CAB44B /* TicketDetailView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TicketDetailView .swift"; sourceTree = "<group>"; };
+		34407AFA2A07385400CAB44B /* BarcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeView.swift; sourceTree = "<group>"; };
+		34407AFC2A073E0900CAB44B /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		344229BD2A00631900A24432 /* ConcertInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertInfo.swift; sourceTree = "<group>"; };
 		344229BF2A00639000A24432 /* ConcertStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertStatusView.swift; sourceTree = "<group>"; };
 		344229C22A0063F900A24432 /* ConcertStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertStatus.swift; sourceTree = "<group>"; };
 		344229C52A006CA000A24432 /* MyTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTicketView.swift; sourceTree = "<group>"; };
 		344229C72A00D6A300A24432 /* EmbeddedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedResponse.swift; sourceTree = "<group>"; };
 		344229CB2A04572600A24432 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		344B39052A04ADB900B6AEAE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		344B39072A04B42C00B6AEAE /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		34A7643729FEEF2700AB3FD4 /* Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectApp.swift; sourceTree = "<group>"; };
 		34A7643C29FEEF2700AB3FD4 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
@@ -73,6 +85,7 @@
 			children = (
 				344229C22A0063F900A24432 /* ConcertStatus.swift */,
 				344229C72A00D6A300A24432 /* EmbeddedResponse.swift */,
+				34407AF62A0629C300CAB44B /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,14 +113,12 @@
 			children = (
 				34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */,
 				34A7645129FEF53A00AB3FD4 /* R.generated.swift */,
-				34A7643C29FEEF2700AB3FD4 /* CustomTabView.swift */,
 				344229C12A0063CC00A24432 /* Models */,
 				34A7645829FEFEEA00AB3FD4 /* Extensions */,
 				34A7645329FEF86B00AB3FD4 /* TabBar */,
 				34A7644829FEF00600AB3FD4 /* Components */,
 				34A7643E29FEEF2A00AB3FD4 /* Assets.xcassets */,
 				34A7644029FEEF2A00AB3FD4 /* Preview Content */,
-				344229CB2A04572600A24432 /* MainView.swift */,
 			);
 			path = Connect;
 			sourceTree = "<group>";
@@ -123,10 +134,12 @@
 		34A7644829FEF00600AB3FD4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				34A7643C29FEEF2700AB3FD4 /* CustomTabView.swift */,
 				34A7644929FEF01900AB3FD4 /* HomeNavBar.swift */,
 				34A7645629FEFC1700AB3FD4 /* MyConcertInfo.swift */,
 				344229BD2A00631900A24432 /* ConcertInfo.swift */,
 				344229BF2A00639000A24432 /* ConcertStatusView.swift */,
+				344B39072A04B42C00B6AEAE /* TagView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -134,8 +147,12 @@
 		34A7645329FEF86B00AB3FD4 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				344229CB2A04572600A24432 /* MainView.swift */,
 				34A7645429FEF87F00AB3FD4 /* HomeView.swift */,
 				344229C52A006CA000A24432 /* MyTicketView.swift */,
+				344B39052A04ADB900B6AEAE /* ProfileView.swift */,
+				34407AF82A062D7500CAB44B /* TicketDetailView .swift */,
+				34407AFA2A07385400CAB44B /* BarcodeView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -144,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				34A7645929FEFF0700AB3FD4 /* NSObject+Extenstion.swift */,
+				34407AFC2A073E0900CAB44B /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -294,6 +312,8 @@
 				344229CC2A04572600A24432 /* MainView.swift in Sources */,
 				34A7643D29FEEF2700AB3FD4 /* CustomTabView.swift in Sources */,
 				34A7644A29FEF01900AB3FD4 /* HomeNavBar.swift in Sources */,
+				34407AF72A0629C300CAB44B /* User.swift in Sources */,
+				34407AFB2A07385400CAB44B /* BarcodeView.swift in Sources */,
 				344229C82A00D6A400A24432 /* EmbeddedResponse.swift in Sources */,
 				344229C62A006CA000A24432 /* MyTicketView.swift in Sources */,
 				34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */,
@@ -301,7 +321,11 @@
 				34A7645529FEF87F00AB3FD4 /* HomeView.swift in Sources */,
 				344229BE2A00631900A24432 /* ConcertInfo.swift in Sources */,
 				344229C02A00639000A24432 /* ConcertStatusView.swift in Sources */,
+				344B39082A04B42C00B6AEAE /* TagView.swift in Sources */,
+				34407AF92A062D7500CAB44B /* TicketDetailView .swift in Sources */,
 				344229C32A0063F900A24432 /* ConcertStatus.swift in Sources */,
+				34407AFD2A073E0900CAB44B /* UIImage+Extension.swift in Sources */,
+				344B39062A04ADB900B6AEAE /* ProfileView.swift in Sources */,
 				34A7645229FEF53A00AB3FD4 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
