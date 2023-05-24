@@ -10,9 +10,9 @@ import SwiftUI
 struct MyTicketView: View {
     
     private let gridItem = [GridItem(.adaptive(minimum: 150))]
-    
+    @State private var isTicketDetailShown: Bool = false
     var body: some View {
-        ZStack(alignment: .bottom) {
+        ZStack(alignment: .bottomTrailing) {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     ZStack(alignment: .bottom) {
@@ -51,13 +51,17 @@ struct MyTicketView: View {
                     }
                     .padding(.top, 26)
                 }
+                .padding(.bottom, 80)
             }
           uploadButton
-            .padding(.bottom, 33)
+            .padding(.bottom, 120)
+            .padding(.trailing)
         }
         .ignoresSafeArea()
         .background(Color(R.color.addTicketButton()!))
-        
+        .sheet(isPresented: $isTicketDetailShown) {
+            TicketDetailView()
+        }
     }
 }
 
@@ -88,6 +92,7 @@ extension MyTicketView {
     private var viewTicketButton: some  View {
         Button {
             print("View Ticket")
+            isTicketDetailShown.toggle()
         } label: {
             Text("View Ticket")
                 .foregroundColor(.black)
