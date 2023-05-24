@@ -13,11 +13,15 @@ struct _R {
   let bundle: Foundation.Bundle
   var color: color { .init(bundle: bundle) }
   var image: image { .init(bundle: bundle) }
+  var file: file { .init(bundle: bundle) }
 
   func color(bundle: Foundation.Bundle) -> color {
     .init(bundle: bundle)
   }
   func image(bundle: Foundation.Bundle) -> image {
+    .init(bundle: bundle)
+  }
+  func file(bundle: Foundation.Bundle) -> file {
     .init(bundle: bundle)
   }
   func validate() throws {
@@ -28,7 +32,7 @@ struct _R {
     let developmentRegion = "en"
   }
 
-  /// This `_R.color` struct is generated, and contains static references to 5 colors.
+  /// This `_R.color` struct is generated, and contains static references to 6 colors.
   struct color {
     let bundle: Foundation.Bundle
 
@@ -41,6 +45,9 @@ struct _R {
     /// Color `blue`.
     var blue: RswiftResources.ColorResource { .init(name: "blue", path: [], bundle: bundle) }
 
+    /// Color `infoTextFieldFillColor`.
+    var infoTextFieldFillColor: RswiftResources.ColorResource { .init(name: "infoTextFieldFillColor", path: [], bundle: bundle) }
+
     /// Color `navyBlue`.
     var navyBlue: RswiftResources.ColorResource { .init(name: "navyBlue", path: [], bundle: bundle) }
 
@@ -48,14 +55,28 @@ struct _R {
     var red: RswiftResources.ColorResource { .init(name: "red", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 2 images.
+  /// This `_R.image` struct is generated, and contains static references to 4 images.
   struct image {
     let bundle: Foundation.Bundle
 
     /// Image `coldPlay`.
     var coldPlay: RswiftResources.ImageResource { .init(name: "coldPlay", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
 
+    /// Image `connect`.
+    var connect: RswiftResources.ImageResource { .init(name: "connect", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
     /// Image `kevinHeart`.
     var kevinHeart: RswiftResources.ImageResource { .init(name: "kevinHeart", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `welcomeImage`.
+    var welcomeImage: RswiftResources.ImageResource { .init(name: "welcomeImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+  }
+
+  /// This `_R.file` struct is generated, and contains static references to 1 resource files.
+  struct file {
+    let bundle: Foundation.Bundle
+
+    /// Resource file `GoogleService-Info.plist`.
+    var googleServiceInfoPlist: RswiftResources.FileResource { .init(name: "GoogleService-Info", pathExtension: "plist", bundle: bundle, locale: LocaleReference.none) }
   }
 }

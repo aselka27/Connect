@@ -20,4 +20,6 @@ struct MyTicket {
     let artist: String?
     let date: String?
     let venue: String?
+    let barcodeNumber: String?
 }
+
