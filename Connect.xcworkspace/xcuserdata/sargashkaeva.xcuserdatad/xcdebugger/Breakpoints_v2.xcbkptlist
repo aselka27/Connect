@@ -3,4 +3,84 @@
    uuid = "1B861071-5EBF-47E9-986E-BDA63BB898BB"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "015C68B5-A845-47C9-BF10-324EAB3BDC11"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Connect/Services/AuthService/DatabaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "setProfile(user:uid:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "015C68B5-A845-47C9-BF10-324EAB3BDC11 - 9eac7b01f199d1ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Connect.DatabaseService.setProfile(user: Connect.SignUpUserForm, uid: Swift.String) async throws -&gt; ()"
+                  moduleName = "Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sargashkaeva/Downloads/Connect/Connect/Services/AuthService/DatabaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "692">
+               </Location>
+               <Location
+                  uuid = "015C68B5-A845-47C9-BF10-324EAB3BDC11 - dc958fad77b7e1d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Connect.DatabaseService.setProfile(user: Connect.SignUpUserForm, uid: Swift.String) async throws -&gt; ()"
+                  moduleName = "Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sargashkaeva/Downloads/Connect/Connect/Services/AuthService/DatabaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "015C68B5-A845-47C9-BF10-324EAB3BDC11 - 777d84d2fe760dee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Connect.DatabaseService.setProfile(user: Connect.SignUpUserForm, uid: Swift.String) async throws -&gt; ()"
+                  moduleName = "Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sargashkaeva/Downloads/Connect/Connect/Services/AuthService/DatabaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "015C68B5-A845-47C9-BF10-324EAB3BDC11 - 3ba6bf3d63e2ebef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Connect.DatabaseService.setProfile(user: Connect.SignUpUserForm, uid: Swift.String) async throws -&gt; ()"
+                  moduleName = "Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sargashkaeva/Downloads/Connect/Connect/Services/AuthService/DatabaseService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

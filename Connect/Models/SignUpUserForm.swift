@@ -7,11 +7,16 @@
 
 import Foundation
 
-
-
 struct SignUpUserForm {
-    let username: String
-    let email: String
-    let confirmPassword: String
-    let password: String
+    var username: String
+    var email: String
+    var confirmPassword: String
+    var password: String
+    var city: String
+    var country: String
+    
+    var representation: [String: Any] {
+        return ["username":self.username, "email": self.email, "city": self.city, "country": self.country]
+    }
 }
+
