@@ -9,7 +9,7 @@ import Foundation
 import FirebaseAuth
 
 protocol AuthService {
-    func signIn(user: SignInUserForm) async throws
+    func signIn(user: SignInUserForm) async throws -> User
     func signUp(user: SignUpUserForm) async throws
 }
 
@@ -25,9 +25,10 @@ final class AuthServiceImpl: AuthService {
         return auth.currentUser
     }
     
-    func signIn(user: SignInUserForm) async throws {
+    func signIn(user: SignInUserForm) async throws -> User {
         do {
             let result = try await auth.signIn(withEmail: user.email, password: user.password)
+            return result.user
         } catch {
             throw error
         }

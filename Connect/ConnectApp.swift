@@ -22,7 +22,7 @@ struct ConnectApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-           RegisterView(viewModel: RegisterViewModelImpl())
+          LoginView()
         }
     }
 }

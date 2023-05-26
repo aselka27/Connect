@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct LoginView: View {
-    @Binding var email: String
+    @StateObject var viewModel = LoginViewModelImpl()
     var body: some View {
         VStack(alignment: .leading, spacing: 32) {
             Text("Welcome back! Glad \nto see you, Again!")
                 .font(.system(size: 30, weight: .bold))
                 .padding(.horizontal, 22)
             VStack(spacing: 15) {
-                InfoTextField(placeHolder: "Enter your email", enteredText: $email)
-                InfoTextField(placeHolder: "Enter your password" ,enteredText: $email)
+                InfoTextField(placeHolder: "Enter your email", enteredText: $viewModel.userInfo.email)
+                InfoTextField(placeHolder: "Enter your password" ,enteredText: $viewModel.userInfo.password)
             }
             HStack {
                 Spacer()
@@ -25,7 +25,9 @@ struct LoginView: View {
                     .bold()
                     .padding(.trailing, 22)
             }
-            BlackButton(buttonText: "Login")
+            BlackButton(buttonText: "Login") {
+                viewModel.signIn(user: viewModel.userInfo)
+            }
             
         }
         
@@ -34,6 +36,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(email: .constant(""))
+        LoginView()
     }
 }
