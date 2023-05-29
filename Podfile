@@ -9,5 +9,7 @@ target 'Connect' do
 pod 'R.swift'
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
+pod 'ExytePopupView'
+
 
 end

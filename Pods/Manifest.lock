@@ -634,6 +634,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.24):
     - BoringSSL-GRPC/Interface (= 0.0.24)
   - BoringSSL-GRPC/Interface (0.0.24)
+  - ExytePopupView (2.4.2)
   - FirebaseAuth (10.7.0):
     - FirebaseCore (~> 10.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
@@ -745,6 +746,7 @@ PODS:
   - R.swift (7.3.0)
 
 DEPENDENCIES:
+  - ExytePopupView
   - FirebaseAuth
   - FirebaseFirestore
   - R.swift
@@ -753,6 +755,7 @@ SPEC REPOS:
   trunk:
     - abseil
     - BoringSSL-GRPC
+    - ExytePopupView
     - FirebaseAuth
     - FirebaseCore
     - FirebaseCoreInternal
@@ -769,6 +772,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   abseil: 926fb7a82dc6d2b8e1f2ed7f3a718bce691d1e46
   BoringSSL-GRPC: 3175b25143e648463a56daeaaa499c6cb86dad33
+  ExytePopupView: 5a9e523c7657cb92cb1a70f1029ac5420c08f0b1
   FirebaseAuth: dd64c01631df724b09f33e584625775c52f7d71f
   FirebaseCore: e317665b9d744727a97e623edbbed009320afdd7
   FirebaseCoreInternal: 8845798510aae74703467480f71ac613788d0696
@@ -782,6 +786,6 @@ SPEC CHECKSUMS:
   PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
   R.swift: cef1c530541cb49412752721797f10dae6b32d11
 
-PODFILE CHECKSUM: d78c3f792cf21560b81916bc2057380a29bcb3a3
+PODFILE CHECKSUM: b6d6103c3b4f57a76c1bf1305f81ac75c173a569
 
 COCOAPODS: 1.12.0

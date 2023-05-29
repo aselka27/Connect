@@ -20,9 +20,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct ConnectApp: App {
     // register app delegate to Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
-          LoginView()
+                LoginView()
+                    
+            }
         }
     }
-}
+

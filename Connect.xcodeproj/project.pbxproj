@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		13955BD70A2586BBF288B696 /* Pods_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F241BC74849819DBCD29E2B4 /* Pods_Connect.framework */; };
+		342848742A20538D00CF5768 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342848732A20538D00CF5768 /* PasswordTextField.swift */; };
+		342848772A205ECF00CF5768 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342848762A205ECF00CF5768 /* Coordinator.swift */; };
 		34407AF72A0629C300CAB44B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34407AF62A0629C300CAB44B /* UserData.swift */; };
 		34407AF92A062D7500CAB44B /* TicketDetailView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 34407AF82A062D7500CAB44B /* TicketDetailView .swift */; };
 		34407AFB2A07385400CAB44B /* BarcodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34407AFA2A07385400CAB44B /* BarcodeView.swift */; };
@@ -33,7 +35,8 @@
 		34A7645229FEF53A00AB3FD4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7645129FEF53A00AB3FD4 /* R.generated.swift */; };
 		34A7645529FEF87F00AB3FD4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7645429FEF87F00AB3FD4 /* HomeView.swift */; };
 		34A7645729FEFC1700AB3FD4 /* MyConcertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7645629FEFC1700AB3FD4 /* MyConcertInfo.swift */; };
-		34A7645A29FEFF0700AB3FD4 /* NSObject+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7645929FEFF0700AB3FD4 /* NSObject+Extenstion.swift */; };
+		34A7645A29FEFF0700AB3FD4 /* UIScreen+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7645929FEFF0700AB3FD4 /* UIScreen+Extenstion.swift */; };
+		34B774122A253840007CB694 /* ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B774112A253840007CB694 /* ErrorAlert.swift */; };
 		34DF8F442A1E7E1A009A56E0 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F432A1E7E1A009A56E0 /* RegisterView.swift */; };
 		34DF8F462A1E8111009A56E0 /* InfoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F452A1E8111009A56E0 /* InfoTextField.swift */; };
 		34DF8F482A1E821E009A56E0 /* BlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F472A1E821E009A56E0 /* BlackButton.swift */; };
@@ -50,6 +53,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		342848732A20538D00CF5768 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		342848762A205ECF00CF5768 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		34407AF62A0629C300CAB44B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		34407AF82A062D7500CAB44B /* TicketDetailView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TicketDetailView .swift"; sourceTree = "<group>"; };
 		34407AFA2A07385400CAB44B /* BarcodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeView.swift; sourceTree = "<group>"; };
@@ -76,7 +81,8 @@
 		34A7645129FEF53A00AB3FD4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		34A7645429FEF87F00AB3FD4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		34A7645629FEFC1700AB3FD4 /* MyConcertInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcertInfo.swift; sourceTree = "<group>"; };
-		34A7645929FEFF0700AB3FD4 /* NSObject+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extenstion.swift"; sourceTree = "<group>"; };
+		34A7645929FEFF0700AB3FD4 /* UIScreen+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extenstion.swift"; sourceTree = "<group>"; };
+		34B774112A253840007CB694 /* ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlert.swift; sourceTree = "<group>"; };
 		34DF8F432A1E7E1A009A56E0 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		34DF8F452A1E8111009A56E0 /* InfoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTextField.swift; sourceTree = "<group>"; };
 		34DF8F472A1E821E009A56E0 /* BlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackButton.swift; sourceTree = "<group>"; };
@@ -121,6 +127,14 @@
 			children = (
 			);
 			path = TicketService;
+			sourceTree = "<group>";
+		};
+		342848752A205EAA00CF5768 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				342848762A205ECF00CF5768 /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		344229C12A0063CC00A24432 /* Models */ = {
@@ -187,6 +201,7 @@
 		34A7643929FEEF2700AB3FD4 /* Connect */ = {
 			isa = PBXGroup;
 			children = (
+				342848752A205EAA00CF5768 /* Coordinator */,
 				34A7645129FEF53A00AB3FD4 /* R.generated.swift */,
 				34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */,
 				34DF8F5C2A1F205B009A56E0 /* Modules */,
@@ -221,6 +236,8 @@
 				34DF8F452A1E8111009A56E0 /* InfoTextField.swift */,
 				34DF8F472A1E821E009A56E0 /* BlackButton.swift */,
 				34DF8F4B2A1E8898009A56E0 /* BlackBorderButton.swift */,
+				342848732A20538D00CF5768 /* PasswordTextField.swift */,
+				34B774112A253840007CB694 /* ErrorAlert.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -241,7 +258,7 @@
 		34A7645829FEFEEA00AB3FD4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				34A7645929FEFF0700AB3FD4 /* NSObject+Extenstion.swift */,
+				34A7645929FEFF0700AB3FD4 /* UIScreen+Extenstion.swift */,
 				34407AFC2A073E0900CAB44B /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
@@ -433,6 +450,7 @@
 				34A7645729FEFC1700AB3FD4 /* MyConcertInfo.swift in Sources */,
 				344229CC2A04572600A24432 /* MainView.swift in Sources */,
 				34A7643D29FEEF2700AB3FD4 /* CustomTabView.swift in Sources */,
+				342848772A205ECF00CF5768 /* Coordinator.swift in Sources */,
 				34A7644A29FEF01900AB3FD4 /* HomeNavBar.swift in Sources */,
 				34DF8F622A1F20B3009A56E0 /* RegisterViewModel.swift in Sources */,
 				3483261E2A1C62BC00D2DD9F /* BaseRouter.swift in Sources */,
@@ -445,9 +463,11 @@
 				344229C62A006CA000A24432 /* MyTicketView.swift in Sources */,
 				34DF8F442A1E7E1A009A56E0 /* RegisterView.swift in Sources */,
 				34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */,
-				34A7645A29FEFF0700AB3FD4 /* NSObject+Extenstion.swift in Sources */,
+				34A7645A29FEFF0700AB3FD4 /* UIScreen+Extenstion.swift in Sources */,
 				34DF8F592A1EA4BF009A56E0 /* SignUpUserForm.swift in Sources */,
+				34B774122A253840007CB694 /* ErrorAlert.swift in Sources */,
 				34A7645529FEF87F00AB3FD4 /* HomeView.swift in Sources */,
+				342848742A20538D00CF5768 /* PasswordTextField.swift in Sources */,
 				344229BE2A00631900A24432 /* ConcertInfo.swift in Sources */,
 				34DF8F572A1EA47A009A56E0 /* SignInUserForm.swift in Sources */,
 				348326202A1C670600D2DD9F /* RequestBuilder.swift in Sources */,

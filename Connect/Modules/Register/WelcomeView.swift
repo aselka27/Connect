@@ -8,20 +8,45 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    
+    @State var showLogin: Bool = false
+    @State var showRegister: Bool = false
     var body: some View {
-        VStack {
-            Image(uiImage: R.image.connect()!)
-                .resizable()
-                .frame(height: UIScreen.main.bounds.height/2)
-                .ignoresSafeArea()
-                .padding(.top)
-              Spacer()
-                VStack(spacing: 15) {
-                    BlackButton(buttonText: "Login")
-                    BlackButton()
+        NavigationView {
+            VStack {
+                Image(uiImage: R.image.connect()!)
+                    .resizable()
+                    .frame(height: UIScreen.main.bounds.height/2)
+                    .ignoresSafeArea()
+                    .padding(.top)
+                  Spacer()
+                    VStack(spacing: 15) {
+                    
+                        BlackButton(buttonText: "Login") {
+                        showLogin = true
+                        }
+                        BlackButton {
+                            showRegister = true
+                        }
+                }
+                Spacer()
             }
-            Spacer()
+            
+            .background(
+                NavigationLink(destination: LoginView(), isActive: $showLogin) {
+                    EmptyView()
+                }
+                    .hidden()
+            )
+            .background(
+                NavigationLink(destination: RegisterView(), isActive: $showRegister) {
+                    EmptyView()
+                }
+                    .hidden()
+            )
         }
+        .navigationViewStyle(.stack)
+        
     }
 }
 

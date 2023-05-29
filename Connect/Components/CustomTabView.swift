@@ -21,12 +21,21 @@ struct CustomTabView: View {
     var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)) {
             TabView(selection: $selectedTab) {
-                HomeView()
-                    .tag(tabs[0])
-               MyTicketView()
-                    .tag(tabs[1])
-               ProfileView()
-                    .tag(tabs[2])
+                NavigationView {
+                    HomeView()
+                        .tag(tabs[0])
+                }
+                .navigationViewStyle(.stack)
+                NavigationView {
+                    MyTicketView()
+                         .tag(tabs[1])
+                }
+                .navigationViewStyle(.stack)
+                NavigationView {
+                    ProfileView()
+                         .tag(tabs[2])
+                }
+                .navigationViewStyle(.stack)
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .ignoresSafeArea(.all)
