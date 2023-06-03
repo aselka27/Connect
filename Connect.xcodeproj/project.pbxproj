@@ -27,6 +27,7 @@
 		3483261C2A1C628900D2DD9F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3483261B2A1C628900D2DD9F /* NetworkManager.swift */; };
 		3483261E2A1C62BC00D2DD9F /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3483261D2A1C62BC00D2DD9F /* BaseRouter.swift */; };
 		348326202A1C670600D2DD9F /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3483261F2A1C670600D2DD9F /* RequestBuilder.swift */; };
+		349DF96A2A2B9EC2007FC46C /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DF9692A2B9EC2007FC46C /* UserDefaultsService.swift */; };
 		34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */; };
 		34A7643D29FEEF2700AB3FD4 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643C29FEEF2700AB3FD4 /* CustomTabView.swift */; };
 		34A7643F29FEEF2A00AB3FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A7643E29FEEF2A00AB3FD4 /* Assets.xcassets */; };
@@ -37,6 +38,9 @@
 		34A7645729FEFC1700AB3FD4 /* MyConcertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7645629FEFC1700AB3FD4 /* MyConcertInfo.swift */; };
 		34A7645A29FEFF0700AB3FD4 /* UIScreen+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7645929FEFF0700AB3FD4 /* UIScreen+Extenstion.swift */; };
 		34B774122A253840007CB694 /* ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B774112A253840007CB694 /* ErrorAlert.swift */; };
+		34B774142A2547CE007CB694 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B774132A2547CE007CB694 /* UIApplication+Extension.swift */; };
+		34B774162A254831007CB694 /* Publishers+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B774152A254831007CB694 /* Publishers+Extension.swift */; };
+		34B774182A27059C007CB694 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B774172A27059C007CB694 /* String+Extension.swift */; };
 		34DF8F442A1E7E1A009A56E0 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F432A1E7E1A009A56E0 /* RegisterView.swift */; };
 		34DF8F462A1E8111009A56E0 /* InfoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F452A1E8111009A56E0 /* InfoTextField.swift */; };
 		34DF8F482A1E821E009A56E0 /* BlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F472A1E821E009A56E0 /* BlackButton.swift */; };
@@ -72,6 +76,7 @@
 		3483261B2A1C628900D2DD9F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3483261D2A1C62BC00D2DD9F /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		3483261F2A1C670600D2DD9F /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		349DF9692A2B9EC2007FC46C /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		34A7643729FEEF2700AB3FD4 /* Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectApp.swift; sourceTree = "<group>"; };
 		34A7643C29FEEF2700AB3FD4 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
@@ -83,6 +88,9 @@
 		34A7645629FEFC1700AB3FD4 /* MyConcertInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcertInfo.swift; sourceTree = "<group>"; };
 		34A7645929FEFF0700AB3FD4 /* UIScreen+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extenstion.swift"; sourceTree = "<group>"; };
 		34B774112A253840007CB694 /* ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlert.swift; sourceTree = "<group>"; };
+		34B774132A2547CE007CB694 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		34B774152A254831007CB694 /* Publishers+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publishers+Extension.swift"; sourceTree = "<group>"; };
+		34B774172A27059C007CB694 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		34DF8F432A1E7E1A009A56E0 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		34DF8F452A1E8111009A56E0 /* InfoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTextField.swift; sourceTree = "<group>"; };
 		34DF8F472A1E821E009A56E0 /* BlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackButton.swift; sourceTree = "<group>"; };
@@ -152,6 +160,7 @@
 		348326142A1C61AA00D2DD9F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				349DF9682A2B9EA9007FC46C /* UserDefaultsService */,
 				342848722A20486000CF5768 /* TicketService */,
 				34DF8F532A1EA3E6009A56E0 /* AuthService */,
 				348326152A1C61B300D2DD9F /* NetworkService */,
@@ -177,6 +186,14 @@
 				348326192A1C622100D2DD9F /* HttpHeader.swift */,
 			);
 			path = NetworkComponents;
+			sourceTree = "<group>";
+		};
+		349DF9682A2B9EA9007FC46C /* UserDefaultsService */ = {
+			isa = PBXGroup;
+			children = (
+				349DF9692A2B9EC2007FC46C /* UserDefaultsService.swift */,
+			);
+			path = UserDefaultsService;
 			sourceTree = "<group>";
 		};
 		34A7642E29FEEF2700AB3FD4 = {
@@ -260,6 +277,9 @@
 			children = (
 				34A7645929FEFF0700AB3FD4 /* UIScreen+Extenstion.swift */,
 				34407AFC2A073E0900CAB44B /* UIImage+Extension.swift */,
+				34B774132A2547CE007CB694 /* UIApplication+Extension.swift */,
+				34B774152A254831007CB694 /* Publishers+Extension.swift */,
+				34B774172A27059C007CB694 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -449,8 +469,10 @@
 				34DF8F552A1EA3F4009A56E0 /* AuthService.swift in Sources */,
 				34A7645729FEFC1700AB3FD4 /* MyConcertInfo.swift in Sources */,
 				344229CC2A04572600A24432 /* MainView.swift in Sources */,
+				349DF96A2A2B9EC2007FC46C /* UserDefaultsService.swift in Sources */,
 				34A7643D29FEEF2700AB3FD4 /* CustomTabView.swift in Sources */,
 				342848772A205ECF00CF5768 /* Coordinator.swift in Sources */,
+				34B774162A254831007CB694 /* Publishers+Extension.swift in Sources */,
 				34A7644A29FEF01900AB3FD4 /* HomeNavBar.swift in Sources */,
 				34DF8F622A1F20B3009A56E0 /* RegisterViewModel.swift in Sources */,
 				3483261E2A1C62BC00D2DD9F /* BaseRouter.swift in Sources */,
@@ -462,8 +484,10 @@
 				344229C82A00D6A400A24432 /* EmbeddedResponse.swift in Sources */,
 				344229C62A006CA000A24432 /* MyTicketView.swift in Sources */,
 				34DF8F442A1E7E1A009A56E0 /* RegisterView.swift in Sources */,
+				34B774142A2547CE007CB694 /* UIApplication+Extension.swift in Sources */,
 				34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */,
 				34A7645A29FEFF0700AB3FD4 /* UIScreen+Extenstion.swift in Sources */,
+				34B774182A27059C007CB694 /* String+Extension.swift in Sources */,
 				34DF8F592A1EA4BF009A56E0 /* SignUpUserForm.swift in Sources */,
 				34B774122A253840007CB694 /* ErrorAlert.swift in Sources */,
 				34A7645529FEF87F00AB3FD4 /* HomeView.swift in Sources */,

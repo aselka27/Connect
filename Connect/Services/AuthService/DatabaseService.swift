@@ -7,9 +7,10 @@
 
 import Foundation
 import FirebaseFirestore
+import os
 
 
-
+let logger = OSLog(subsystem: "come.aselZhumalieva.Connect", category: "debug")
 
 class DatabaseService {
     
@@ -23,6 +24,7 @@ class DatabaseService {
     private init() {}
     
     func setProfile(user: SignUpUserForm, uid: String) async throws  {
+        os_log("Attempting Firebase login", log: logger, type: .info)
         do {
             var userData: [String: Any] = [
                 "user_id" : uid,
@@ -32,9 +34,9 @@ class DatabaseService {
                 "country": user.country
             ]
             try await usersRef.document(uid).setData(userData, merge: false)
-            print("Success registering the user")
+            os_log("Success registering the user", log: logger, type: .info)
         } catch {
-            print("Error saving the user: \(error.localizedDescription)")
+            os_log("Firebase login failed: %@", log: logger, type: .error, error.localizedDescription)
             throw error
         }
     }
