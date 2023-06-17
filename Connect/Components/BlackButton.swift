@@ -9,9 +9,10 @@ import SwiftUI
 
 struct BlackButton: View {
     var buttonText = "Register"
+    var tapped: (()->())?
     var body: some View {
         Button {
-            
+            tapped?()
         } label: {
             Text(buttonText)
                 .foregroundColor(.white)
@@ -28,6 +29,8 @@ struct BlackButton: View {
 
 struct BlackButton_Previews: PreviewProvider {
     static var previews: some View {
-        BlackButton()
+        BlackButton(tapped: {
+            
+        })
     }
 }

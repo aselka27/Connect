@@ -8,15 +8,18 @@
 import Foundation
 
 
-
-struct User {
+struct UserData {
     let name: String?
     let email: String?
-    let tickets: [MyTicket]?
+    let uid: String
+    let phone: String
+    let city: String
+    let country: String
+    let tickets: [MyTicket]? = nil
 }
 
-
 struct MyTicket {
+    let ticketId: String
     let artist: String?
     let date: String?
     let venue: String?

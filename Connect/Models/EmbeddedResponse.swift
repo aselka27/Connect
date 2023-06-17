@@ -27,12 +27,16 @@ struct Event: Codable {
     let images: [Images]?
     let dates: Dates?
     let embedded: EventEmbedded?
+    
+    enum CodingKeys: String, CodingKey {
+        case embedded = "_embedded"
+        case name, id, url, images, dates
+    }
 }
 
 struct Images: Codable {
     let url: String?
     let width, height: Int?
-    let fallback: Bool?
 }
 
 struct Dates: Codable {
@@ -43,7 +47,6 @@ struct Dates: Codable {
 struct Start: Codable {
     let localDate, localTime: String?
     let dateTime: String?
-    let dateTBD, dateTBA, timeTBA, noSpecificTime: Bool?
 }
 
 struct EventEmbedded: Codable {

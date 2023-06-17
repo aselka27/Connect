@@ -7,9 +7,7 @@
 
 import Foundation
 
-
-
 struct SignInUserForm {
-    let email: String
-    let password: String
+    var email: String
+    var password: String
 }

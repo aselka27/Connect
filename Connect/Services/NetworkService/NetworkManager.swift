@@ -21,6 +21,10 @@ protocol NetworkFetcher {
 
 class NetworkManager: NetworkFetcher  {
 
+    
+    static let shared = NetworkManager()
+    
+    private init() {}
     let requestBuilder: URLRequestBuilder = URLRequestBuilderImpl()
     
     func performFetching<D: Decodable>(endpoint: BaseRouter, type: D.Type) async throws -> D {
@@ -32,6 +36,7 @@ class NetworkManager: NetworkFetcher  {
             let decoder = JSONDecoder()
             return try decoder.decode(type, from: data)
         } catch {
+            print(error.localizedDescription)
             throw APIError.failedToDecode
         }
         

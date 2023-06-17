@@ -112,7 +112,7 @@ extension MyTicketView {
                 HStack {
                     Text("16th Aug 2022 - 6:15pm")
                         .foregroundColor(Color(R.color.navyBlue()!))
-                    ConcertStatusView(status: .Archived, color: Color(R.color.blue()!))
+                    ConcertStatusView(status: .Archived)
                 }
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 8) {

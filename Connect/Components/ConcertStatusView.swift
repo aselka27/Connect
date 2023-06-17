@@ -9,7 +9,18 @@ import SwiftUI
 
 struct ConcertStatusView: View {
     var status: ConcertStatus
-    var color: Color
+    var color: Color {
+        switch status {
+        case .Archived:
+            return Color(R.color.blue()!)
+        case .Live:
+            return Color(R.color.blue()!)
+        case .OnSale:
+            return Color(R.color.red()!)
+        case .Upcoming:
+            return .blue
+        }
+    }
     
     var body: some View {
         Text(status.rawValue)
@@ -27,6 +38,6 @@ struct ConcertStatusView: View {
 
 struct ConcertStatusView_Previews: PreviewProvider {
     static var previews: some View {
-        ConcertStatusView(status: .Live, color: Color(R.color.blue()!))
+        ConcertStatusView(status: .Live)
     }
 }

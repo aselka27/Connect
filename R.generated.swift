@@ -32,7 +32,7 @@ struct _R {
     let developmentRegion = "en"
   }
 
-  /// This `_R.color` struct is generated, and contains static references to 6 colors.
+  /// This `_R.color` struct is generated, and contains static references to 11 colors.
   struct color {
     let bundle: Foundation.Bundle
 
@@ -48,14 +48,29 @@ struct _R {
     /// Color `infoTextFieldFillColor`.
     var infoTextFieldFillColor: RswiftResources.ColorResource { .init(name: "infoTextFieldFillColor", path: [], bundle: bundle) }
 
+    /// Color `lightGreen`.
+    var lightGreen: RswiftResources.ColorResource { .init(name: "lightGreen", path: [], bundle: bundle) }
+
+    /// Color `lightPink`.
+    var lightPink: RswiftResources.ColorResource { .init(name: "lightPink", path: [], bundle: bundle) }
+
+    /// Color `lightPurple`.
+    var lightPurple: RswiftResources.ColorResource { .init(name: "lightPurple", path: [], bundle: bundle) }
+
+    /// Color `lightYellow`.
+    var lightYellow: RswiftResources.ColorResource { .init(name: "lightYellow", path: [], bundle: bundle) }
+
     /// Color `navyBlue`.
     var navyBlue: RswiftResources.ColorResource { .init(name: "navyBlue", path: [], bundle: bundle) }
+
+    /// Color `purple`.
+    var purple: RswiftResources.ColorResource { .init(name: "purple", path: [], bundle: bundle) }
 
     /// Color `red`.
     var red: RswiftResources.ColorResource { .init(name: "red", path: [], bundle: bundle) }
   }
 
-  /// This `_R.image` struct is generated, and contains static references to 4 images.
+  /// This `_R.image` struct is generated, and contains static references to 3 images.
   struct image {
     let bundle: Foundation.Bundle
 
@@ -67,9 +82,6 @@ struct _R {
 
     /// Image `kevinHeart`.
     var kevinHeart: RswiftResources.ImageResource { .init(name: "kevinHeart", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
-
-    /// Image `welcomeImage`.
-    var welcomeImage: RswiftResources.ImageResource { .init(name: "welcomeImage", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
   }
 
   /// This `_R.file` struct is generated, and contains static references to 1 resource files.

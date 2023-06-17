@@ -24,7 +24,7 @@ extension BaseRouter {
     }
     
     var host: String {
-        return "https://app.ticketmaster.com/discovery/v2"
+        return "app.ticketmaster.com"
     }
 }
 
