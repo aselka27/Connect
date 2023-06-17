@@ -18,7 +18,12 @@ protocol RegisterViewModel: ObservableObject {
  class RegisterViewModelImpl: RegisterViewModel, ObservableObject {
     
     @Published var alertMessage: String = ""
-    @Published var userData: SignUpUserForm = SignUpUserForm(username: "", email: "", confirmPassword: "", password: "", city: "", country: "")
+    @Published var userData: SignUpUserForm
+     
+     
+     init() {
+         userData = SignUpUserForm(username: "", confirmPassword: "", city: "", country: "", email: "", password: "")
+     }
    
      func registerUser(with data: SignUpUserForm)  {
        Task { @MainActor in
@@ -29,8 +34,6 @@ protocol RegisterViewModel: ObservableObject {
            } catch {
                print("Error: \(error.localizedDescription)")
            }
-           
-          
        }
     }
 }

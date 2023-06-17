@@ -9,40 +9,35 @@ import SwiftUI
 import UIKit
 
 struct HomeView: View {
+    @StateObject var viewModel = HomeViewModelImpl()
+    
     
     var body: some View {
         VStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading) {
                     HomeNavBar()
-                    concertsHeader
-                    .padding(.top, 27)
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        LazyHStack(spacing: 16) {
-                            MyConcertInfo()
-                            MyConcertInfo()
-                        }
-                        .padding(.horizontal, 24)
-                    }
-                    
-                    Text("Explore concerts")
-                        .font(.title.bold())
-                        .padding(.top, 28)
-                        .padding(.horizontal, 24)
+                    Text("Find events in")
+                    Text("Popular in Barcelona")
+                    UpcomingEventView()
+                        .padding([.top, .bottom])
                     ScrollView(.vertical, showsIndicators: false) {
                         LazyVStack {
-                            ConcertInfo()
-                            ConcertInfo()
+                            ForEach(viewModel.events, id: \.id) { event in
+                               ConcertInfo(event: event)
+                                    .frame(width: UIScreen.main.bounds.width-32)
+                                    .padding(.horizontal)
+                                  
+                            }
                         }
                     }
                   
                 }
-                .padding(.bottom, 70)
+                .padding(.bottom, 90)
               
             }
            
         }
-//        .padding(.leading, 24)
         .background(Color(R.color.addTicketButton()!))
     }
     
@@ -52,7 +47,7 @@ struct HomeView: View {
 extension HomeView {
     private var concertsHeader: some View {
         HStack {
-            Text("Your concerts")
+            Text("Your events")
                 .font(.title.bold())
             Spacer()
             Button {

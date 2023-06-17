@@ -16,11 +16,16 @@ protocol LoginViewModel: AnyObject {
 
 class LoginViewModelImpl: LoginViewModel, ObservableObject {
    
-    @Published var userInfo = SignInUserForm(email: "", password: "")
+    @Published var userInfo: SignInUserForm
     @Published var showMainView: Bool = false
     @Published var showErrorAlert: Bool = false
     @Published var errorText: String = ""
     
+    
+    init() {
+        userInfo = SignInUserForm(email: "", password: "")
+    }
+   
     func signIn(user: SignInUserForm) {
         Task { @MainActor in
             do {
@@ -28,6 +33,7 @@ class LoginViewModelImpl: LoginViewModel, ObservableObject {
              showMainView = true
                 print(user.uid)
             } catch {
+                print(userInfo.email, userInfo.password)
                 showErrorAlert = true
                 errorText = error.localizedDescription
                 print("Error signing in the user: \(error.localizedDescription)")

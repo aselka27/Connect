@@ -7,6 +7,24 @@
 
 import SwiftUI
 
+
+enum TabElement: String, CaseIterable {
+    case home
+    case discover
+    case profile
+    
+    var icon: String {
+        switch self {
+        case .home:
+            return "house"
+        case .discover:
+            return "heart"
+        case .profile:
+            return "person"
+        }
+    }
+}
+
 var tabs = ["house", "heart", "person"]
 
 struct CustomTabView: View {
@@ -90,3 +108,38 @@ struct TabButton: View {
 //        CustomTabView()
 //    }
 //}
+
+
+struct CustomTabBar: View {
+    @Binding var selectedTab: TabElement
+    
+    
+    
+    private var fillImage: String {
+        return selectedTab.icon
+    }
+     
+    var body: some View {
+        VStack {
+            HStack {
+                ForEach(TabElement.allCases, id: \.rawValue) { tab in
+                    Spacer()
+                    Image(systemName: selectedTab == tab ? fillImage : tab.icon)
+                        .scaleEffect( selectedTab == tab ? 1.25 : 1.0)
+                        .foregroundColor(selectedTab == tab ? .red : .gray)
+                        .font(.system(size: 22))
+                        .onTapGesture {
+                            withAnimation(.easeIn(duration: 0.1)) {
+                                selectedTab = tab
+                            }
+                        }
+                    Spacer()
+                }
+            }
+            .frame(width: nil, height: 60)
+            .background(.white)
+            .cornerRadius(10)
+            .padding()
+        }
+    }
+}

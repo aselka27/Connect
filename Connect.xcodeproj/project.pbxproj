@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		13955BD70A2586BBF288B696 /* Pods_Connect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F241BC74849819DBCD29E2B4 /* Pods_Connect.framework */; };
+		3414E78C2A367A5A00578B96 /* TicketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414E78B2A367A5A00578B96 /* TicketRouter.swift */; };
+		3414E78F2A380E4400578B96 /* EventImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414E78E2A380E4400578B96 /* EventImageView.swift */; };
+		3414E7922A380F7A00578B96 /* EventImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414E7912A380F7A00578B96 /* EventImageService.swift */; };
+		3414E7942A383BF500578B96 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414E7932A383BF500578B96 /* DiscoverView.swift */; };
 		342848742A20538D00CF5768 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342848732A20538D00CF5768 /* PasswordTextField.swift */; };
 		342848772A205ECF00CF5768 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342848762A205ECF00CF5768 /* Coordinator.swift */; };
 		34407AF72A0629C300CAB44B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34407AF62A0629C300CAB44B /* UserData.swift */; };
@@ -22,12 +26,20 @@
 		344229CC2A04572600A24432 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344229CB2A04572600A24432 /* MainView.swift */; };
 		344B39062A04ADB900B6AEAE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B39052A04ADB900B6AEAE /* ProfileView.swift */; };
 		344B39082A04B42C00B6AEAE /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B39072A04B42C00B6AEAE /* TagView.swift */; };
+		344B4C9E2A355D6D005350D4 /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B4C9D2A355D6D005350D4 /* KeyboardHandler.swift */; };
+		344B4CA12A3656A5005350D4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B4CA02A3656A5005350D4 /* HomeViewModel.swift */; };
+		344B4CA42A3656E6005350D4 /* TicketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B4CA32A3656E6005350D4 /* TicketService.swift */; };
 		348326182A1C61DB00D2DD9F /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348326172A1C61DB00D2DD9F /* HttpMethod.swift */; };
 		3483261A2A1C622100D2DD9F /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348326192A1C622100D2DD9F /* HttpHeader.swift */; };
 		3483261C2A1C628900D2DD9F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3483261B2A1C628900D2DD9F /* NetworkManager.swift */; };
 		3483261E2A1C62BC00D2DD9F /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3483261D2A1C62BC00D2DD9F /* BaseRouter.swift */; };
 		348326202A1C670600D2DD9F /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3483261F2A1C670600D2DD9F /* RequestBuilder.swift */; };
+		348F73722A38F11C0027094C /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F73712A38F11C0027094C /* EventType.swift */; };
+		348F73742A38F2DC0027094C /* EventTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F73732A38F2DC0027094C /* EventTypeView.swift */; };
+		348F73762A38F40E0027094C /* UpcomingEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F73752A38F40E0027094C /* UpcomingEventView.swift */; };
+		348F73782A3A2B8F0027094C /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348F73772A3A2B8F0027094C /* EventView.swift */; };
 		349DF96A2A2B9EC2007FC46C /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DF9692A2B9EC2007FC46C /* UserDefaultsService.swift */; };
+		349DF96C2A2BA297007FC46C /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DF96B2A2BA297007FC46C /* CountryPicker.swift */; };
 		34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */; };
 		34A7643D29FEEF2700AB3FD4 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A7643C29FEEF2700AB3FD4 /* CustomTabView.swift */; };
 		34A7643F29FEEF2A00AB3FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A7643E29FEEF2A00AB3FD4 /* Assets.xcassets */; };
@@ -41,8 +53,10 @@
 		34B774142A2547CE007CB694 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B774132A2547CE007CB694 /* UIApplication+Extension.swift */; };
 		34B774162A254831007CB694 /* Publishers+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B774152A254831007CB694 /* Publishers+Extension.swift */; };
 		34B774182A27059C007CB694 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B774172A27059C007CB694 /* String+Extension.swift */; };
+		34BC93B92A30F2CE004E7871 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BC93B82A30F2CE004E7871 /* SessionService.swift */; };
+		34D39BAF2A338DD300268677 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D39BAE2A338DD300268677 /* CustomBackButton.swift */; };
 		34DF8F442A1E7E1A009A56E0 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F432A1E7E1A009A56E0 /* RegisterView.swift */; };
-		34DF8F462A1E8111009A56E0 /* InfoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F452A1E8111009A56E0 /* InfoTextField.swift */; };
+		34DF8F462A1E8111009A56E0 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F452A1E8111009A56E0 /* InputTextField.swift */; };
 		34DF8F482A1E821E009A56E0 /* BlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F472A1E821E009A56E0 /* BlackButton.swift */; };
 		34DF8F4A2A1E8855009A56E0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F492A1E8855009A56E0 /* WelcomeView.swift */; };
 		34DF8F4C2A1E8898009A56E0 /* BlackBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF8F4B2A1E8898009A56E0 /* BlackBorderButton.swift */; };
@@ -57,6 +71,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3414E78B2A367A5A00578B96 /* TicketRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketRouter.swift; sourceTree = "<group>"; };
+		3414E78E2A380E4400578B96 /* EventImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventImageView.swift; sourceTree = "<group>"; };
+		3414E7912A380F7A00578B96 /* EventImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventImageService.swift; sourceTree = "<group>"; };
+		3414E7932A383BF500578B96 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		342848732A20538D00CF5768 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		342848762A205ECF00CF5768 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		34407AF62A0629C300CAB44B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
@@ -71,12 +89,20 @@
 		344229CB2A04572600A24432 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		344B39052A04ADB900B6AEAE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		344B39072A04B42C00B6AEAE /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		344B4C9D2A355D6D005350D4 /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		344B4CA02A3656A5005350D4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		344B4CA32A3656E6005350D4 /* TicketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketService.swift; sourceTree = "<group>"; };
 		348326172A1C61DB00D2DD9F /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		348326192A1C622100D2DD9F /* HttpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeader.swift; sourceTree = "<group>"; };
 		3483261B2A1C628900D2DD9F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3483261D2A1C62BC00D2DD9F /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		3483261F2A1C670600D2DD9F /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		348F73712A38F11C0027094C /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		348F73732A38F2DC0027094C /* EventTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeView.swift; sourceTree = "<group>"; };
+		348F73752A38F40E0027094C /* UpcomingEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventView.swift; sourceTree = "<group>"; };
+		348F73772A3A2B8F0027094C /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		349DF9692A2B9EC2007FC46C /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		349DF96B2A2BA297007FC46C /* CountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
 		34A7643729FEEF2700AB3FD4 /* Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A7643A29FEEF2700AB3FD4 /* ConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectApp.swift; sourceTree = "<group>"; };
 		34A7643C29FEEF2700AB3FD4 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
@@ -91,8 +117,10 @@
 		34B774132A2547CE007CB694 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		34B774152A254831007CB694 /* Publishers+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publishers+Extension.swift"; sourceTree = "<group>"; };
 		34B774172A27059C007CB694 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		34BC93B82A30F2CE004E7871 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		34D39BAE2A338DD300268677 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		34DF8F432A1E7E1A009A56E0 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		34DF8F452A1E8111009A56E0 /* InfoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTextField.swift; sourceTree = "<group>"; };
+		34DF8F452A1E8111009A56E0 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 		34DF8F472A1E821E009A56E0 /* BlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackButton.swift; sourceTree = "<group>"; };
 		34DF8F492A1E8855009A56E0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		34DF8F4B2A1E8898009A56E0 /* BlackBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBorderButton.swift; sourceTree = "<group>"; };
@@ -130,11 +158,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		342848722A20486000CF5768 /* TicketService */ = {
+		3414E78D2A380E2B00578B96 /* ArtistImage */ = {
 			isa = PBXGroup;
 			children = (
+				3414E78E2A380E4400578B96 /* EventImageView.swift */,
 			);
-			path = TicketService;
+			path = ArtistImage;
+			sourceTree = "<group>";
+		};
+		3414E7902A380F6800578B96 /* ImageService */ = {
+			isa = PBXGroup;
+			children = (
+				3414E7912A380F7A00578B96 /* EventImageService.swift */,
+			);
+			path = ImageService;
 			sourceTree = "<group>";
 		};
 		342848752A205EAA00CF5768 /* Coordinator */ = {
@@ -153,17 +190,38 @@
 				34407AF62A0629C300CAB44B /* UserData.swift */,
 				34DF8F562A1EA47A009A56E0 /* SignInUserForm.swift */,
 				34DF8F582A1EA4BF009A56E0 /* SignUpUserForm.swift */,
+				348F73712A38F11C0027094C /* EventType.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		344B4C9F2A36561F005350D4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				344229CB2A04572600A24432 /* MainView.swift */,
+				344B4CA02A3656A5005350D4 /* HomeViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		344B4CA22A3656D8005350D4 /* TicketService */ = {
+			isa = PBXGroup;
+			children = (
+				344B4CA32A3656E6005350D4 /* TicketService.swift */,
+			);
+			path = TicketService;
 			sourceTree = "<group>";
 		};
 		348326142A1C61AA00D2DD9F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3414E7902A380F6800578B96 /* ImageService */,
+				344B4CA22A3656D8005350D4 /* TicketService */,
+				34BC93B72A30F2AC004E7871 /* SessionService */,
 				349DF9682A2B9EA9007FC46C /* UserDefaultsService */,
-				342848722A20486000CF5768 /* TicketService */,
 				34DF8F532A1EA3E6009A56E0 /* AuthService */,
 				348326152A1C61B300D2DD9F /* NetworkService */,
+				3414E78B2A367A5A00578B96 /* TicketRouter.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -229,6 +287,7 @@
 				34A7644829FEF00600AB3FD4 /* Components */,
 				34A7643E29FEEF2A00AB3FD4 /* Assets.xcassets */,
 				34A7644029FEEF2A00AB3FD4 /* Preview Content */,
+				344B4C9D2A355D6D005350D4 /* KeyboardHandler.swift */,
 			);
 			path = Connect;
 			sourceTree = "<group>";
@@ -250,11 +309,16 @@
 				344229BD2A00631900A24432 /* ConcertInfo.swift */,
 				344229BF2A00639000A24432 /* ConcertStatusView.swift */,
 				344B39072A04B42C00B6AEAE /* TagView.swift */,
-				34DF8F452A1E8111009A56E0 /* InfoTextField.swift */,
+				34DF8F452A1E8111009A56E0 /* InputTextField.swift */,
 				34DF8F472A1E821E009A56E0 /* BlackButton.swift */,
 				34DF8F4B2A1E8898009A56E0 /* BlackBorderButton.swift */,
 				342848732A20538D00CF5768 /* PasswordTextField.swift */,
 				34B774112A253840007CB694 /* ErrorAlert.swift */,
+				349DF96B2A2BA297007FC46C /* CountryPicker.swift */,
+				34D39BAE2A338DD300268677 /* CustomBackButton.swift */,
+				348F73732A38F2DC0027094C /* EventTypeView.swift */,
+				348F73752A38F40E0027094C /* UpcomingEventView.swift */,
+				348F73772A3A2B8F0027094C /* EventView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -262,12 +326,13 @@
 		34A7645329FEF86B00AB3FD4 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				344229CB2A04572600A24432 /* MainView.swift */,
+				3414E78D2A380E2B00578B96 /* ArtistImage */,
 				34A7645429FEF87F00AB3FD4 /* HomeView.swift */,
 				344229C52A006CA000A24432 /* MyTicketView.swift */,
 				344B39052A04ADB900B6AEAE /* ProfileView.swift */,
 				34407AF82A062D7500CAB44B /* TicketDetailView .swift */,
 				34407AFA2A07385400CAB44B /* BarcodeView.swift */,
+				3414E7932A383BF500578B96 /* DiscoverView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -284,6 +349,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		34BC93B72A30F2AC004E7871 /* SessionService */ = {
+			isa = PBXGroup;
+			children = (
+				34BC93B82A30F2CE004E7871 /* SessionService.swift */,
+			);
+			path = SessionService;
+			sourceTree = "<group>";
+		};
 		34DF8F532A1EA3E6009A56E0 /* AuthService */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +369,7 @@
 		34DF8F5C2A1F205B009A56E0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				344B4C9F2A36561F005350D4 /* Main */,
 				34DF8F602A1F20A4009A56E0 /* Register */,
 				34DF8F5D2A1F2064009A56E0 /* Login */,
 			);
@@ -464,16 +538,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3414E78C2A367A5A00578B96 /* TicketRouter.swift in Sources */,
 				34DF8F5B2A1F0A88009A56E0 /* DatabaseService.swift in Sources */,
+				3414E7942A383BF500578B96 /* DiscoverView.swift in Sources */,
 				34DF8F4C2A1E8898009A56E0 /* BlackBorderButton.swift in Sources */,
+				348F73742A38F2DC0027094C /* EventTypeView.swift in Sources */,
 				34DF8F552A1EA3F4009A56E0 /* AuthService.swift in Sources */,
 				34A7645729FEFC1700AB3FD4 /* MyConcertInfo.swift in Sources */,
 				344229CC2A04572600A24432 /* MainView.swift in Sources */,
+				3414E78F2A380E4400578B96 /* EventImageView.swift in Sources */,
 				349DF96A2A2B9EC2007FC46C /* UserDefaultsService.swift in Sources */,
+				3414E7922A380F7A00578B96 /* EventImageService.swift in Sources */,
+				34BC93B92A30F2CE004E7871 /* SessionService.swift in Sources */,
 				34A7643D29FEEF2700AB3FD4 /* CustomTabView.swift in Sources */,
 				342848772A205ECF00CF5768 /* Coordinator.swift in Sources */,
 				34B774162A254831007CB694 /* Publishers+Extension.swift in Sources */,
 				34A7644A29FEF01900AB3FD4 /* HomeNavBar.swift in Sources */,
+				34D39BAF2A338DD300268677 /* CustomBackButton.swift in Sources */,
 				34DF8F622A1F20B3009A56E0 /* RegisterViewModel.swift in Sources */,
 				3483261E2A1C62BC00D2DD9F /* BaseRouter.swift in Sources */,
 				34DF8F5F2A1F2079009A56E0 /* LoginViewModel.swift in Sources */,
@@ -485,28 +566,35 @@
 				344229C62A006CA000A24432 /* MyTicketView.swift in Sources */,
 				34DF8F442A1E7E1A009A56E0 /* RegisterView.swift in Sources */,
 				34B774142A2547CE007CB694 /* UIApplication+Extension.swift in Sources */,
+				344B4CA42A3656E6005350D4 /* TicketService.swift in Sources */,
 				34A7643B29FEEF2700AB3FD4 /* ConnectApp.swift in Sources */,
 				34A7645A29FEFF0700AB3FD4 /* UIScreen+Extenstion.swift in Sources */,
 				34B774182A27059C007CB694 /* String+Extension.swift in Sources */,
+				349DF96C2A2BA297007FC46C /* CountryPicker.swift in Sources */,
 				34DF8F592A1EA4BF009A56E0 /* SignUpUserForm.swift in Sources */,
 				34B774122A253840007CB694 /* ErrorAlert.swift in Sources */,
+				344B4C9E2A355D6D005350D4 /* KeyboardHandler.swift in Sources */,
 				34A7645529FEF87F00AB3FD4 /* HomeView.swift in Sources */,
 				342848742A20538D00CF5768 /* PasswordTextField.swift in Sources */,
 				344229BE2A00631900A24432 /* ConcertInfo.swift in Sources */,
 				34DF8F572A1EA47A009A56E0 /* SignInUserForm.swift in Sources */,
 				348326202A1C670600D2DD9F /* RequestBuilder.swift in Sources */,
+				348F73722A38F11C0027094C /* EventType.swift in Sources */,
 				34DF8F4E2A1E9E58009A56E0 /* LoginView.swift in Sources */,
 				344229C02A00639000A24432 /* ConcertStatusView.swift in Sources */,
 				344B39082A04B42C00B6AEAE /* TagView.swift in Sources */,
 				34407AF92A062D7500CAB44B /* TicketDetailView .swift in Sources */,
 				344229C32A0063F900A24432 /* ConcertStatus.swift in Sources */,
+				348F73782A3A2B8F0027094C /* EventView.swift in Sources */,
 				34DF8F482A1E821E009A56E0 /* BlackButton.swift in Sources */,
 				34407AFD2A073E0900CAB44B /* UIImage+Extension.swift in Sources */,
+				348F73762A38F40E0027094C /* UpcomingEventView.swift in Sources */,
 				344B39062A04ADB900B6AEAE /* ProfileView.swift in Sources */,
-				34DF8F462A1E8111009A56E0 /* InfoTextField.swift in Sources */,
+				34DF8F462A1E8111009A56E0 /* InputTextField.swift in Sources */,
 				34A7645229FEF53A00AB3FD4 /* R.generated.swift in Sources */,
 				3483261A2A1C622100D2DD9F /* HttpHeader.swift in Sources */,
 				34DF8F4A2A1E8855009A56E0 /* WelcomeView.swift in Sources */,
+				344B4CA12A3656A5005350D4 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

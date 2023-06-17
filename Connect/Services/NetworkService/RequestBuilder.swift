@@ -13,8 +13,10 @@ protocol URLRequestBuilder {
 
 
 class URLRequestBuilderImpl: URLRequestBuilder {
+  
     func build(with endPoint: BaseRouter) throws -> URLRequest {
         var urlComponents = URLComponents()
+       
         urlComponents.scheme = endPoint.scheme
         urlComponents.host = endPoint.host
         urlComponents.path = endPoint.path
@@ -30,6 +32,7 @@ class URLRequestBuilderImpl: URLRequestBuilder {
         endPoint.httpHeader?.forEach({ header in
             urlRequest.setValue(header.value, forHTTPHeaderField: header.name)
         })
+        print(urlRequest)
         return urlRequest
     }
 }

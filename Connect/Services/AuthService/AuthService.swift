@@ -8,6 +8,24 @@
 import Foundation
 import FirebaseAuth
 
+
+enum RegisterErrors {
+    case invalidEmail
+    case invalidPassword
+    case emptyField(name: String)
+    
+    var description: String {
+        switch self {
+        case .invalidEmail:
+            return "Please make sure that you have entered correct email"
+        case .invalidPassword:
+            return "Please make sure that password is at least 8 characters long"
+        case .emptyField(let name):
+            return "Fill out \(name) field"
+        }
+    }
+}
+
 protocol AuthService {
     func signIn(user: SignInUserForm) async throws -> User
     func signUp(user: SignUpUserForm) async throws
@@ -27,7 +45,7 @@ final class AuthServiceImpl: AuthService {
     
     func signIn(user: SignInUserForm) async throws -> User {
         do {
-            let result = try await auth.signIn(withEmail: user.email, password: user.password)
+            let result = try await auth.signIn(withEmail: user.email, password: user.email)
             return result.user
         } catch {
             throw error
@@ -41,6 +59,14 @@ final class AuthServiceImpl: AuthService {
             
         } catch {
             print("Error registering user: \(error.localizedDescription)")
+            throw error
+        }
+    }
+    
+    func signOut() throws {
+        do {
+        try auth.signOut()
+        } catch {
             throw error
         }
     }

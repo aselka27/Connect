@@ -18,8 +18,8 @@ struct RegisterView: View {
                     .font(.system(size: 28, weight: .bold))
                     .padding(.horizontal, 22)
                 VStack(spacing: 12) {
-                    InfoTextField(placeHolder: "Username", enteredText: $viewModel.userData.username)
-                    InfoTextField(placeHolder: "Email", enteredText: $viewModel.userData.email)
+                    InputTextField(placeHolder: "Username", enteredText: $viewModel.userData.username)
+                    InputTextField(placeHolder: "Email", enteredText: $viewModel.userData.email)
                     PasswordTextField(placeHolder: "Password", enteredText: $viewModel.userData.password)
                     PasswordTextField(placeHolder: "Confirm Password", enteredText: $viewModel.userData.confirmPassword)
                 }

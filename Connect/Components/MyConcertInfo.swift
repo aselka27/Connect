@@ -8,33 +8,38 @@
 import SwiftUI
 
 struct MyConcertInfo: View {
+    
+    var event: Event
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Image(uiImage: R.image.coldPlay()!)
-                .resizable()
-                .cornerRadius(12)
+            EventImageView(urlStringl: event.images?[1].url ?? "")
                 .frame( height: 200)
-                
+
                 VStack(alignment: .leading) {
                     HStack {
-                        Text("16th Aug 2022 - 6.15pm")
+                        Text("\(event.dates?.start?.localDate?.formatDateString() ?? "N/A")-\(event.dates?.start?.localTime?.formatTime() ?? "N/A")")
                             .foregroundColor(Color(R.color.navyBlue()!))
-                        ConcertStatusView(status: .Live, color: Color(R.color.blue()!))
+                        ConcertStatusView(status: .OnSale)
                         
                     }
-                        Text("Coldplay")
+                    Text(event.name ?? "N/A")
                             .font(Font.system(.title))
                             .fontWeight(.bold)
-                            .lineLimit(2)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.5)
+                           
                         VStack(alignment: .leading, spacing: 2) {
-                            Text("Wembley Staidum")
-                            Text("London - United Kingdom")
+                            Text(event.embedded?.venues?.first?.name ?? "N/A")
+                                .font(.footnote)
+                            Text(event.embedded?.venues?.first?.address?.line1 ?? "N/A")
+                                .font(.footnote)
                         }
                 }
                 .padding(.horizontal)
                 .padding(.bottom)
         }
-        .frame(minWidth: UIScreen.main.bounds.width*0.6)
+        .frame(width: UIScreen.main.bounds.width*0.8)
         .background(.white)
         .cornerRadius(12)
     }
@@ -42,7 +47,7 @@ struct MyConcertInfo: View {
 
 struct MyConcertInfo_Previews: PreviewProvider {
     static var previews: some View {
-        MyConcertInfo()
+        MyConcertInfo(event: Event(name: "Beyounce: Renesseiance Tour 1", id: "1", url: "", images: [Images(url: "", width: 20, height: 20)], dates: Dates(start: Start(localDate: "05/20/23", localTime: "6 pm", dateTime: "6 pm"), spanMultipleDays: false), embedded: EventEmbedded(venues: [Venue(name: "Soldier Fields", address: Address(line1: "Millenium Park"))])))
             .previewLayout(.sizeThatFits)
     }
 }

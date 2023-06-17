@@ -16,10 +16,10 @@ struct WelcomeView: View {
             VStack {
                 Image(uiImage: R.image.connect()!)
                     .resizable()
-                    .frame(height: UIScreen.main.bounds.height/2)
+                    .frame(width: UIScreen.main.bounds.width-60, height: UIScreen.main.bounds.height/3)
                     .ignoresSafeArea()
                     .padding(.top)
-                  Spacer()
+                 Spacer()
                     VStack(spacing: 15) {
                     
                         BlackButton(buttonText: "Login") {

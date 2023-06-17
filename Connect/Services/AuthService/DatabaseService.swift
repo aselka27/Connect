@@ -26,7 +26,7 @@ class DatabaseService {
     func setProfile(user: SignUpUserForm, uid: String) async throws  {
         os_log("Attempting Firebase login", log: logger, type: .info)
         do {
-            var userData: [String: Any] = [
+            let userData: [String: Any] = [
                 "user_id" : uid,
                 "username":user.username,
                 "email": user.email,
@@ -40,6 +40,4 @@ class DatabaseService {
             throw error
         }
     }
-    
-    
 }

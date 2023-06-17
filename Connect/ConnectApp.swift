@@ -23,7 +23,11 @@ struct ConnectApp: App {
     
     var body: some Scene {
         WindowGroup {
-                LoginView()
+            if AuthServiceImpl.shared.currenUser != nil {
+                MainView()
+            } else {
+                WelcomeView()
+            }
                     
             }
         }

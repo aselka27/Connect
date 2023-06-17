@@ -9,41 +9,62 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        ZStack {
-            VStack {
-                VStack(alignment: .center, spacing: 8) {
+        VStack {
+                VStack(alignment: .center) {
                     Image("kevinHeart")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 150, height: 150)
+                        .frame(width: 120, height: 120)
                         .clipShape(Circle())
-                    Text("david.lee@gmail.com")
-                    Text("David Lee")
-                        .font(.largeTitle.bold())
+                        .background(Circle().frame(width: 125, height: 125))
+                    Text("Kevin Heart")
+                        .font(.title.bold())
+                    Text("kevin.heart@gmail.com")
+                        .foregroundColor(.black)
                 }
+               Spacer()
+            ZStack {
+                VStack {
                     HStack {
-                        Text("My interests")
-                            .font(.title2.italic())
+                        VStack(alignment: .leading) {
+                            Text("Settings")
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                           
+                        }
                         Spacer()
                     }
-                    .padding(.leading, 30)
-                    .padding(.top, 30)
-                ScrollView(.horizontal, showsIndicators: false) {
-                    LazyHStack(alignment: .top) {
-                        TagView(tag: "Taylor Swift")
-                        TagView(tag: "Drake")
-                        TagView(tag: "Taylor Swift")
-                        TagView(tag: "Drake")
-                        TagView(tag: "Taylor Swift")
-                        TagView(tag: "Drake")
-                        
-                    }
-                    .padding(.horizontal)
-                }
+                    .padding()
                     Spacer()
-            }
+                    Button {
+                        try? AuthServiceImpl.shared.signOut()
+                    } label: {
+                        Text("Logout")
+                            .foregroundColor(.black)
+                    }
+                    
+                    .cornerRadius(10)
+                    .frame(height: 60)
+                    .frame(maxWidth: .infinity)
+                    .border(Color.brown)
+                    .padding(.horizontal, 20)
+                    
+                   
+
+                    Spacer()
+                }
+                .padding(.top)
+              
+                           
+                }
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/1.5)
+                .background(.white)
+                .cornerRadius(40)
+          
+            
         }
-        .background(Color(R.color.addTicketButton()!))
+        .edgesIgnoringSafeArea(.bottom)
+        .background(Color(R.color.blue()!).opacity(0.5))
     }
 }
 

@@ -82,5 +82,147 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F88E58DD-585B-4FB3-83B6-EAF163E0D7AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Connect/Services/NetworkService/RequestBuilder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "build(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F88E58DD-585B-4FB3-83B6-EAF163E0D7AD - 25031d0c069090ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Connect.URLRequestBuilderImpl.build(with: Connect.BaseRouter) throws -&gt; Foundation.URLRequest"
+                  moduleName = "Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sargashkaeva/Desktop/Connect/Connect/Services/NetworkService/RequestBuilder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1300">
+               </Location>
+               <Location
+                  uuid = "F88E58DD-585B-4FB3-83B6-EAF163E0D7AD - 25031d0c069090ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Connect.URLRequestBuilderImpl.build(with: Connect.BaseRouter) throws -&gt; Foundation.URLRequest"
+                  moduleName = "Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sargashkaeva/Desktop/Connect/Connect/Services/NetworkService/RequestBuilder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1400">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5AD79FB7-45C7-4BB2-BF04-B936A018BB04"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Connect/Services/ImageService/EventImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getEventImageFor(url:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5AD79FB7-45C7-4BB2-BF04-B936A018BB04 - 821d0a1dd559cb53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Connect.EventImageService.getEventImageFor(url: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sargashkaeva/Desktop/Connect/Connect/Services/ImageService/EventImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "5AD79FB7-45C7-4BB2-BF04-B936A018BB04 - 89f938ecfbe3a704"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Connect.EventImageService.getEventImageFor(url: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sargashkaeva/Desktop/Connect/Connect/Services/ImageService/EventImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5AD79FB7-45C7-4BB2-BF04-B936A018BB04 - a28dd9aca30e8f51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Connect.EventImageService.getEventImageFor(url: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sargashkaeva/Desktop/Connect/Connect/Services/ImageService/EventImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "5AD79FB7-45C7-4BB2-BF04-B936A018BB04 - d37581771a193150"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Connect.EventImageService.getEventImageFor(url: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "Connect"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sargashkaeva/Desktop/Connect/Connect/Services/ImageService/EventImageService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "294596EB-6C2E-4F8F-A162-96C4E62E4D91"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Connect/Services/ImageService/EventImageService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getEventImageFor(url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

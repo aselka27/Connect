@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct InfoTextField: View {
+struct InputTextField: View {
     
     var placeHolder = ""
     @Binding var enteredText: String
@@ -17,16 +17,15 @@ struct InfoTextField: View {
             .frame(height: 50)
             .padding(8)
             .background( RoundedRectangle(cornerRadius: 8)
-                
                 .fill(Color(uiColor: R.color.infoTextFieldFillColor()!))
-//                .strokeBorder(Color.gray, lineWidth: 1)
             )
+            .textInputAutocapitalization(.never)
             .padding(.horizontal, 22)
     }
 }
 
 struct InfoTextField_Previews: PreviewProvider {
     static var previews: some View {
-        InfoTextField(placeHolder: "username", enteredText: .constant("aselka"))
+        InputTextField(placeHolder: "username", enteredText: .constant(""))
     }
 }
